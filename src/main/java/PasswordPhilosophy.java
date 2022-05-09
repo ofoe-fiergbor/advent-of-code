@@ -15,7 +15,7 @@ public class PasswordPhilosophy {
 
     public static int countValidPassword(List<String> passwordPolicies) {
         int result = 0;
-        String regex = "^(\\d+)-(\\d+) (\\w): (.+)$";
+        String regex = "^(\\d+)-(\\d+)\\s(\\w): (.+)$";
         Pattern pattern = Pattern.compile(regex);
 
         for (String passwordPolicy : passwordPolicies) {
